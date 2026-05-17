@@ -146,13 +146,15 @@ a:hover {
 }
 
 .name-badge:hover::after,
-.name-badge:focus-visible::after {
+.name-badge:focus-visible::after,
+.name-badge.is-active::after {
   opacity: 1;
   transform: translateY(0);
 }
 
 .name-badge:hover span,
-.name-badge:focus-visible span {
+.name-badge:focus-visible span,
+.name-badge.is-active span {
   opacity: 0;
   transform: translateY(-0.18em);
 }
@@ -200,7 +202,11 @@ a:hover {
   filter: grayscale(1) contrast(1.08);
 }
 
-.map-popover span {
+.map-popover-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   padding: 8px 10px;
   background: var(--ink);
   color: var(--paper);
@@ -208,10 +214,19 @@ a:hover {
   line-height: 1;
 }
 
+.map-popover-caption a {
+  color: var(--paper);
+  font-size: 14px;
+  white-space: nowrap;
+  text-decoration-color: rgba(248, 247, 242, 0.5);
+}
+
 .place-map:hover .map-popover,
 .place-flag:hover + .map-popover,
-.place-map:focus-within .map-popover {
+.place-map:focus-within .map-popover,
+.place-map.is-open .map-popover {
   opacity: 1;
+  pointer-events: auto;
   transform: translateY(0) scale(1);
 }
 
@@ -227,8 +242,22 @@ a:hover {
   margin-top: 12px;
 }
 
+.work-list > li > a:first-child {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0 1px;
+  transition: background-size 180ms ease;
+}
+
+.work-list > li > a:first-child:hover,
+.work-list > li > a:first-child:focus-visible {
+  background-size: 100% 1px;
+}
+
 .work-list strong {
-  font-weight: 400;
+  font-weight: 600;
   color: var(--ink);
 }
 
