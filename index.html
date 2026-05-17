@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Saarim Zaman, product engineer and builder of software, music, and creative tools."
+    />
+    <title>Saarim Zaman</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23f8f7f2'/%3E%3Cpath d='M3 11.5h10M4 4.5h8M5.5 8h5' stroke='%230b0b0b' stroke-width='1.4' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas
+      id="sound-visualizer"
+      aria-hidden="true"
+      data-testid="sound-visualizer"
+    ></canvas>
+
+    <main class="page-shell" aria-label="Saarim Zaman portfolio">
+      <section id="about" class="section" aria-labelledby="about-title">
+        <h1 id="about-title" class="section-title">About</h1>
+        <div class="section-body">
+          <p>
+            <span class="name-badge" data-bengali="সারিম জামান" tabindex="0"><span>SAARIM ZAMAN</span></span> is an entrepreneur, technologist, and musician from <span class="place-map"><a class="place-flag" href="https://www.google.com/maps/search/?api=1&query=Gulshan%201%2C%20Dhaka%2C%20Bangladesh" rel="noreferrer" target="_blank">Dhaka, Bangladesh</a><span class="map-popover" aria-hidden="true"><iframe title="Gulshan 1, Dhaka, Bangladesh map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Gulshan%201%2C%20Dhaka%2C%20Bangladesh&output=embed"></iframe><span>Gulshan 1, Dhaka</span></span></span> living and working in NYC.
+          </p>
+          <p class="social-links" aria-label="Social links">
+            <a href="https://www.instagram.com/poolnoodle93/" rel="noreferrer" target="_blank">Instagram</a>
+            <span aria-hidden="true">|</span>
+            <a href="https://x.com/saarimzaman" rel="noreferrer" target="_blank">X</a>
+            <span aria-hidden="true">|</span>
+            <a href="https://www.linkedin.com/in/saarimz/" rel="noreferrer" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="selected-works"
+        class="section works-section"
+        aria-labelledby="works-title"
+      >
+        <h2 id="works-title" class="section-title">Selected Work</h2>
+        <ul class="work-list">
+          <li>
+            <a href="https://itm.studio" rel="noreferrer" target="_blank"><strong>ITM Studio</strong></a> - an operating system for building real world experiences, events infrastructure, and out of home marketing campaigns. <em class="work-date">2023 - Present</em>
+          </li>
+          <li>
+            <a href="https://github.com/saarimz/toolpa" rel="noreferrer" target="_blank"><strong>Toolpa</strong></a> - an open-source agentic audio framework for music making in the browser, co-created with <a href="https://debit.media/" rel="noreferrer" target="_blank">Debit</a>. Presented at <a href="https://www.newmuseum.org/" rel="noreferrer" target="_blank">The New Museum</a> for <a href="https://rhizome.org/editorial/7x7-2026/" rel="noreferrer" target="_blank">Rhizome 7x7</a>, and <a href="https://www.canyon.org/" rel="noreferrer" target="_blank">Canyon NYC</a> for <a href="https://vibecon.ai/" rel="noreferrer" target="_blank">vibecon</a>. <em class="work-date">2026</em>
+          </li>
+          <li>
+            <a href="https://www.perrotin.com/en/events/collective-hallucinations-2026-new-york" rel="noreferrer" target="_blank"><strong>Mirror, Mirror</strong></a> - a live avatar AI oracle co-created with artist <a href="https://www.perrotin.com/en/artists/nick-doyle" rel="noreferrer" target="_blank">Nick Doyle</a> for his solo exhibition Collective Hallucinations at Perrotin NYC. <em class="work-date">2026</em>
+          </li>
+          <li>
+            <a href="https://rhizome.org/editorial/2025/oct/24/vibe-shift/" rel="noreferrer" target="_blank"><strong>Workshop at Vibe Shift</strong></a> - led a workshop for artists and creative technologists on vibe coding your own browser-based synthesizers for a two-day event hosted by <a href="https://rhizome.org/" rel="noreferrer" target="_blank">Rhizome</a> and <a href="https://www.anthropic.com/" rel="noreferrer" target="_blank">Anthropic</a> at <a href="https://www.zerospace.co/" rel="noreferrer" target="_blank">ZeroSpace Brooklyn</a>. <em class="work-date">2025</em>
+          </li>
+          <li>
+            <a href="https://www.nytimes.com/2024/06/13/arts/music/wu-tang-clan-once-upon-a-time-in-shaolin.html" rel="noreferrer" target="_blank"><strong>Wu-Tang Clan - Once Upon a Time in Shaolin</strong></a> - hybrid technical contributor and creative producer for <a href="https://pleasr.org/" rel="noreferrer" target="_blank">PleasrDAO</a>, responsible for bringing this artifact to the public through online and in-person experiences. <em class="work-date">2024 - 2025</em>
+          </li>
+          <li>
+            <a href="https://www.ninaprotocol.com/releases/poolnoodle93-on-gulshan-1" rel="noreferrer" target="_blank"><strong>On Gulshan 1</strong></a> - first full length record produced under the moniker <a href="https://www.ninaprotocol.com/hubs/poolnoodle93" rel="noreferrer" target="_blank">poolnoodle93</a>, published independently. <em class="work-date">2024</em>
+          </li>
+          <li>
+            <a href="https://mirror.xyz/" rel="noreferrer" target="_blank"><strong>Product Lead at mirror.xyz</strong></a> - core product and engineering contributor to one of the most successful NFT protocols for publishing creative work. <em class="work-date">2021 - 2023</em>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="./visualizer.js" defer></script>
+  </body>
+</html>
