@@ -242,16 +242,35 @@ a:hover {
   margin-top: 12px;
 }
 
-.work-list > li > a:first-child {
-  text-decoration: underline;
-  text-decoration-color: currentColor;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
+.work-list a {
+  padding: 0 0.07em 0.03em;
+  border-radius: 2px;
+  background-image: linear-gradient(var(--ink), var(--ink));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0.05em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  text-decoration: none;
+  transition:
+    background-size 180ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    color 140ms ease;
+}
+
+.work-list a:hover,
+.work-list a:focus-visible {
+  background-size: 100% 100%;
+  color: var(--paper);
 }
 
 .work-list strong {
   font-weight: inherit;
   color: var(--ink);
+}
+
+.work-list a:hover strong,
+.work-list a:focus-visible strong {
+  color: inherit;
 }
 
 .work-date {
@@ -294,5 +313,9 @@ a:hover {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .work-list a {
+    transition: none;
   }
 }
