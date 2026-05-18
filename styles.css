@@ -243,21 +243,14 @@ a:hover {
 }
 
 .work-list > li > a:first-child {
-  text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  background-size: 0 1px;
-  transition: background-size 180ms ease;
-}
-
-.work-list > li > a:first-child:hover,
-.work-list > li > a:first-child:focus-visible {
-  background-size: 100% 1px;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 .work-list strong {
-  font-weight: 600;
+  font-weight: inherit;
   color: var(--ink);
 }
 
